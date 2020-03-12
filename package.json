@@ -1,0 +1,27 @@
+{
+  "name": "bitcoin_calculator",
+  "version": "1.0.0",
+  "description": "Node.JS-based BitCoin calculator that can convert USD or EUR to BitCoin's currency",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "bitcoin",
+    "USD",
+    "EUR",
+    "BitCoin",
+    "Node.JS"
+  ],
+  "author": "Karl80038",
+  "license": "LGPL-3.0-or-later",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}

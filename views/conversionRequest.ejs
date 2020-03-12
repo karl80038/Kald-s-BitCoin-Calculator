@@ -1,0 +1,23 @@
+<%- include('includes/head.ejs') %>
+<%- include('includes/navigationRequestView.ejs') %>
+</head>
+
+<body>
+    <h1 class="title"><%= pageTitle %></h1>
+    <div class="info">
+        <%= pageInfo %>
+    </div>
+    <form action = "/" method = "POST">
+        <label for="value"><%= valueTitle %></label>
+        <input type="number" name="value" id="value">
+        <br>
+        <label for="currency"><%= currencyTitle %></label>
+        <select name="currency">
+            <option value = "USD">US Dollars</option>
+            <option value = "EUR">Euros</option>
+        </select>
+        <br>
+        <button type="submit"><%= submitCaption %></button>
+    </form> 
+    <%- include('includes/end.ejs') %>
+<%- include('includes/footer.ejs') %>

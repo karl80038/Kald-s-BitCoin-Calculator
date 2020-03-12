@@ -1,0 +1,17 @@
+<%- include('includes/head.ejs') %>
+<%- include('includes/navigationResponseView.ejs') %>
+</head>
+<body>
+    <ul>
+        <li>BitCoin's value: <%= bitVal %></li>
+        
+        <li>BitCoin's current rate: <%= bitCurrentRate %></li>
+
+        <li><%= selCurrency %> rate: <%= selCurrRate %></li>
+
+        <li>Value in <%= selCurrency %>: <%= selCurrVal %> </li>
+
+    </ul>
+
+    <%- include('includes/end.ejs') %>
+<%- include('includes/footer.ejs') %>
