@@ -10,8 +10,8 @@ router.use(bodyParser.urlencoded({extended: true}));
 
 router.get('/', function(req, res) {
     res.render('conversionRequest', {
-        pageTitle: "BitCoin Calculator",
-        pageInfo: "Use this page to convert either U.S Dollars or Euros to BitCoins.",
+        pageTitle: "Conversion",
+        pageInfo: "Use this page to convert BitCoins to either U.S Dollars or Euros.",
         valueTitle: "Value:",
         currencyTitle: "Currency:",
         submitCaption: "Convert!",
@@ -77,8 +77,8 @@ router.post('/', function(req, res) {
     // always executed
     res.render('conversionResponse', {
         
-        pageTitle: "BitCoin Calculator - Response Page",
-        pageInfo: "Use this page to convert either U.S Dollars or Euros to BitCoins.",
+        pageTitle: "Results",
+        pageInfo: "Thank you! The results are listed as follows:",
         bitVal : value,
         bitCurrentRate : bitcoinrate,
         selCurrency : currency,

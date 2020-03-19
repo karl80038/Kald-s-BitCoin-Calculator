@@ -9,15 +9,16 @@
     </div>
     <form action = "/" method = "POST">
         <label for="value"><%= valueTitle %></label>
-        <input type="number" name="value" id="value">
-        <br>
+        <input type="text" name="value" id="value">
+        <br><br>
         <label for="currency"><%= currencyTitle %></label>
         <select name="currency">
             <option value = "USD">US Dollars</option>
             <option value = "EUR">Euros</option>
         </select>
-        <br>
+        <br><br>
         <button type="submit"><%= submitCaption %></button>
     </form> 
+    
     <%- include('includes/end.ejs') %>
 <%- include('includes/footer.ejs') %>
