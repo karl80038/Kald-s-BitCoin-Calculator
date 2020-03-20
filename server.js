@@ -24,6 +24,9 @@ app.use(function(req, res, next){
     path: ""});
 
 })
-app.listen(port, ()=> {
-    console.log(`Server is running on port ${port}."`);
+// app.listen(port, ()=> {
+//     console.log(`Server is running on port ${port}."`);
+// })
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Server has started");
 })
