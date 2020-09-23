@@ -20,7 +20,7 @@ app.use(function(req, res, next){
     res.status(404).render('404', 
     {pageTitle: "Page not Found.", 
     pageNotFound: "Our apologies, but we were unable to find the requested page.",
-    message: "The page maybe have been moved or removed.",
+    message: "The page might have been moved or removed.",
     path: ""});
 
 })
